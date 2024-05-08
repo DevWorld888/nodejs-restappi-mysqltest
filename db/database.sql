@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS companyDb;
+
+USE companyDb;
+
+CREATE TABLE employee (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) DEFAULT NULL,
+    salary INT(5) DEFAULT NULL,
+    PRIMARY KEY (id)
+)
+
+DESCRIBE employee;
+
+INSERT INTO employee VALUES 
+(1,'jOE',1000),
+(2,'HENRY',200),
+(3,'SAM',3000),
+(4,'MAZ',1500),
